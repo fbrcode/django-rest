@@ -2,4 +2,11 @@ poetry new --name=drf -- .
 git init
 poetry config virtualenvs.in-project true --local
 poetry shell
-
+poetry add Django
+poetry add python-dotenv
+poetry add djangorestframework
+poetry add djangorestframework-jsonapi
+poetry add django-extensions
+poetry add django-filter
+poetry add tzdata
+poetry show
