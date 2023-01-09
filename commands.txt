@@ -10,3 +10,7 @@ poetry add django-extensions
 poetry add django-filter
 poetry add tzdata
 poetry show
+django-admin startproject app drf
+touch .env.template
+cp .env.template .env
+poetry export -f requirements.txt --output drf/requirements.txt
