@@ -11,6 +11,8 @@ poetry add django-filter
 poetry add tzdata
 poetry show
 django-admin startproject app drf
-touch .env.template
+vim .env.template # add environment variables
 cp .env.template .env
 poetry export -f requirements.txt --output drf/requirements.txt
+cd drf && python manage.py startapp core
+vim drf/settings.py # load environment variables
