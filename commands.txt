@@ -1,2 +1,5 @@
 poetry new --name=drf -- .
-got init
+git init
+poetry config virtualenvs.in-project true --local
+poetry shell
+
