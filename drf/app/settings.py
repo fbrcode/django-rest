@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-]
+    'django_extensions', # great package to access abstract models
+    'django_filters', # used with django rest framework
+    'rest_framework', # django rest framework package
+    'core', # new application
+  ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
